@@ -5,7 +5,7 @@
 In this exercise 2, you will use Semantic Kernel to integrate with Azure OpenAI. Using Semantic Kernel can significantly enhance your AI application's capabilities by providing a unified interface, advanced orchestration, memory management, and robust error handling. It simplifies the integration process and ensures your application is scalable, secure, and resilient.
 
 **Semantic Kernal client setup**
-- Go to #region SemanticKernal and view the kernel client settings
+- Go to #region SemanticKernal in Exercise-2\devShopDNC\Controllers\ProductDetailsController.cs and view the kernel client settings
 - AddAzureOpenAIChatCompletion method is used to configure SK to use Azure OpenAI's Chat Completion service with AOAI endpoint, deploymnet name and default Azure credentials to use System Managed to connect to Azure OpenAI. 
 
 **Prompt Execution Settings**
@@ -16,7 +16,7 @@ In this exercise 2, you will use Semantic Kernel to integrate with Azure OpenAI.
 
 **Maintain State**
 - Azure Open AI responses are stateless. Maintaining a chat history is crucial for providing context to the AI model, enabling it to generate more coherent and contextually relevant responses.
-- Go to #region ChatHistory to view the prompts and responses are maintained 
+- Go to #region ChatHistory in Exercise-2\devShopDNC\Controllers\ProductDetailsController.cs to view the prompts and responses are maintained 
 
 **Azure Sign In**
 - If you have already signed in to Azure, you can skip this step and move to deploy webapp
@@ -25,25 +25,24 @@ In this exercise 2, you will use Semantic Kernel to integrate with Azure OpenAI.
 
 ### Deploy webapp to Azure App Service
 - Right click on devshopDNC.csproj from Exercise 2 folder and select Open In Integrated Terminalaz login
- ![image](https://github.com/user-attachments/assets/2bbbf2a3-4373-474f-b71f-4eb02815ef76)
+ <img width="264" alt="image" src="\images\Exercise-1-terminal.png">
 - To publish the web app, run the command in the opened terminal, run dotnet publish -c Release -o ./bin/Publish
 - Right click on bin--> publish folder and select Deploy to webApp option
   
-  ![image](https://github.com/user-attachments/assets/11a4d603-26fa-41f7-b5ae-bf5c3ac0f9db)
+  
 - Press Deploy
   
-  <img width="254" alt="image" src="https://github.com/user-attachments/assets/1f66b1f2-7ecd-4b14-bb84-1ee3d0b8c680">
+  <img width="254" alt="image" src="\images\Exercise-1-deploymsg.png">
 - Select the already existing webapp
   
-  <img width="385" alt="image" src="https://github.com/user-attachments/assets/dbbabd67-6817-4eeb-8a4a-54b76e45a1ed">
+   <img width="385" alt="image" src="\images\Exercise-1-resource-select.png">
   
 ### Run the webapp
 - Once deployed, click on the Browse button on the portal by going to the App Service web app view to view the web app
-
-  <img width="463" alt="image" src="https://github.com/user-attachments/assets/f8e4d56a-79ff-4f2d-9485-fe06ee69a8e3">
-
   
-  <img width="796" alt="image" src="https://github.com/user-attachments/assets/810f108f-54e9-4047-812d-236efca80143">
+  <img width="463" alt="image" src="\images\Exercise-1-browse-web.png">
+
+  <img width="796" alt="image" src="\images\Exercise-1-webui.png">
 
 ### Enable Managed Identity
 
@@ -65,14 +64,15 @@ Add these appsettings to App Service web app.
 
 - Go to Azure Open AI on the portal and open it in Azure AI Studio
   
-<img width="302" alt="image" src="https://github.com/user-attachments/assets/b5613558-b2d8-4390-b1b8-0a6718f3460c">
+<img width="302" alt="image" src="\images\Exercise-1-openai.png">
 
 - Deploy the gpt-4o model by going to Deployments and select gpt-4o Chat completion model and click Confirm
 
-<img width="368" alt="image" src="https://github.com/user-attachments/assets/8162929f-9d65-4d73-9eb2-0141645f1f39">
+<img width="368" alt="image" src="\images\Exercise-1-deploymodel.png">
 
 - Give the deployment name and select deployment type as "Global Standard"
- <img width="483" alt="image" src="https://github.com/user-attachments/assets/0de857de-f11e-4544-9aa3-3d64a07b9d08">
+
+<img width="796" alt="image" src="\images\Exercise-1-gpt4o.png">
 
 - Switch back to the App Service configuration blade. Add the environment variables DEPLOYMENT_NAME and ENDPOINT. For ENDPOINT value, use TargetUri and for DEPLOYMENT_NAME value, use deployment name retrieved from the above step 
 
@@ -87,4 +87,4 @@ Add these appsettings to App Service web app.
 ### Monitor the webapp
 To monitor your web app, you can leverage the LogStream option under Monitoring section on the webapp portal view.
 
-<img width="771" alt="image" src="https://github.com/user-attachments/assets/239e41b0-6c2f-451f-9cab-853c516722fa">
+<img width="771" alt="image" src="\images\Exercise-1-logs.png">
