@@ -127,12 +127,22 @@ In your lab fork, navigate to the folder `Exercise 4`. Inside, you will find two
      ```
 
 ## Publishing the Frontend Application
+1. Right-lick on the `dotnetfashioassistant` project in Codespace select `Open in Integrated terminal`.
 
-1. When ready, deploy the frontend application to the partially deployed Linux App Service.
+  ![Integrated Terminal](./images/Exercise-4-integrated.jpg)
 
-![Publish application](./images/Exercise-4-Deploy.jpg)
+2. To publish the web app, run the command in the opened terminal, run 
+  ```bash
+  dotnet publish -c Release -o ./bin/Publish
+  ```
 
-2. After deployment, wait a few minutes for the application to restart.
+3. Right click on bin--> publish folder and select Deploy to WebApp option
+
+  ![Deploy web app](./images/Exercise-4-Deploy-1.jpg)
+
+4. Choose the `exercise4` app.
+
+5. After deployment, wait a few minutes for the application to restart.
 
 ## Exploring the Application
 
