@@ -96,7 +96,7 @@ namespace devShopDNC.Controllers
 
             string promptTemplate = $"{userMessage} Product: {productName}. Description: {productDescription}"; 
 
-           #region SemanticKernal
+           #region SemanticKernel
             // Initialize Semantic Kernel
             IKernelBuilder kernelBuilder = Kernel.CreateBuilder();
             kernelBuilder.AddAzureOpenAIChatCompletion(
