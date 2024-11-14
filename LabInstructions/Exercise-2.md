@@ -2,10 +2,10 @@
 ## Exercise 2
 **Description**
 
-In this exercise 2, you will use Semantic Kernel to integrate with Azure OpenAI. Using Semantic Kernel can significantly enhance your AI application's capabilities by providing a unified interface, advanced orchestration, memory management, and robust error handling. It simplifies the integration process and ensures your application is scalable, secure, and resilient.
+In this exercise 2, you will use Semantic Kernel to integrate with Azure OpenAI. Using [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-csharp) can significantly enhance your AI application's capabilities by providing a unified interface, advanced orchestration, memory management, and robust error handling. It simplifies the integration process and ensures your application is scalable, secure, and resilient.
 
 **Semantic Kernal client setup**
-- Go to #region SemanticKernal in Exercise-2\devShopDNC\Controllers\ProductDetailsController.cs and view the kernel client settings
+- Go to #region SemanticKernel in Exercise-2\devShopDNC\Controllers\ProductDetailsController.cs and view the kernel client settings
 - AddAzureOpenAIChatCompletion method is used to configure SK to use Azure OpenAI's Chat Completion service with AOAI endpoint, deploymnet name and default Azure credentials to use System Managed to connect to Azure OpenAI. 
 
 **Prompt Execution Settings**
