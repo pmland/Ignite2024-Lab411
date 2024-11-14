@@ -1,8 +1,5 @@
-# Lab Guide: Integrate GenAI capabilities into your .NET apps with minimal code changes
-## Exercise 2
-**Description**
-
-In this exercise 2, you will use Semantic Kernel to integrate with Azure OpenAI. Using [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-csharp) can significantly enhance your AI application's capabilities by providing a unified interface, advanced orchestration, memory management, and robust error handling. It simplifies the integration process and ensures your application is scalable, secure, and resilient.
+# Exercise 2: Leverage Semantic Kernel to integrate with Azure OpenAI
+In this exercise, you will use Semantic Kernel to integrate with Azure OpenAI. Using [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-csharp) can significantly enhance your AI application's capabilities by providing a unified interface, advanced orchestration, memory management, and robust error handling. It simplifies the integration process and ensures your application is scalable, secure, and resilient.
 
 **Semantic Kernel client setup**
 - Go to #region SemanticKernel in Exercise-2\devShopDNC\Controllers\ProductDetailsController.cs and view the kernel client settings
