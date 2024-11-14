@@ -6,7 +6,7 @@ In this exercise 2, you will use Semantic Kernel to integrate with Azure OpenAI.
 
 **Semantic Kernel client setup**
 - Go to #region SemanticKernel in Exercise-2\devShopDNC\Controllers\ProductDetailsController.cs and view the kernel client settings
-- AddAzureOpenAIChatCompletion method is used to configure SK to use Azure OpenAI's Chat Completion service with AOAI endpoint, deploymnet name and default Azure credentials to use System Managed to connect to Azure OpenAI. 
+- AddAzureOpenAIChatCompletion method is used to configure Semantic Kernel to use Azure OpenAI's Chat Completion service with AOAI endpoint, deployment name and default Azure credentials to use System Managed to connect to Azure OpenAI. 
 
 **Prompt Execution Settings**
 - Using PromptExecutionSettings parameters, you can control various aspects of how AI generates the model responses making it easier to tailor the AI's output to your specific needs.
