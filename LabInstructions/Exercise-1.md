@@ -1,8 +1,5 @@
-# Lab Guide: Integrate GenAI capabilities into your .NET apps with minimal code changes
-## Exercise 1
-**Description**
-
-In this exercise 1, you will be able to create chat assistant for the retail products to help your customers to learn more about the products. To create the product assistant, the user prompts are sent to the Azure Open AI to complete the chat based on the prompt and the product detail.
+# Exercise 1: Get started with intelligent app development
+In this exercise, you will be able to create chat assistant for the retail products to help your customers to learn more about the products. To create the product assistant, the user prompts are sent to the Azure Open AI to complete the chat based on the prompt and the product detail.
 
 **Repo setup**
 - Clone the repository from the main branch or fork it if you want to keep track of your changes if you have a GitHub account.
