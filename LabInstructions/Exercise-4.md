@@ -18,13 +18,13 @@ In this exercise, you will implement a chat application that lets users inquire 
    - The app runs on **P2mv3**, a Premium memory-optimized SKU offered by App Service. [Learn more about Premium SKUs here.](https://azure.microsoft.com/pricing/details/app-service/)
    - This application is deployed with **.NET 8**.
 
-  ![Application Overview](./images/Exercise-4-overview.jpg)
+  ![Web Application Overview in Azure Portal](./images/Exercise-4-overview.jpg)
 ## Exploring the Deployment Center
 
 1. Click on **Deployment Center** in the left navigation.
 2. The application includes a Phi-3 sidecar as part of its setup.
 
-![Deployment Center](./images/Exercise-4-DC.jpg)
+![Deployment Center for a web app resource in the Azure portal](./images/Exercise-4-DC.jpg)
 ## Code Exploration
 
 In your lab fork, navigate to the folder `Exercise 4`. Inside, you will find two projects:
@@ -129,7 +129,7 @@ In your lab fork, navigate to the folder `Exercise 4`. Inside, you will find two
 ## Publishing the Frontend Application
 1. Right-lick on the `dotnetfashioassistant` project in Codespace select `Open in Integrated terminal`.
 
-  ![Integrated Terminal](./images/Exercise-4-integrated.jpg)
+  ![Context menu showing option to Open in integrated Terminal](./images/Exercise-4-integrated.jpg)
 
 2. To publish the web app, run the command in the opened terminal, run 
   ```bash
@@ -138,7 +138,7 @@ In your lab fork, navigate to the folder `Exercise 4`. Inside, you will find two
 
 3. Right click on bin--> publish folder and select Deploy to WebApp option
 
-  ![Deploy web app](./images/Exercise-4-Deploy-1.jpg)
+  ![Context menu showing option to Deploy web app](./images/Exercise-4-Deploy-1.jpg)
 
 4. Choose the `exercise4` app.
 
@@ -148,7 +148,7 @@ In your lab fork, navigate to the folder `Exercise 4`. Inside, you will find two
 
 Once the application is live, navigate to it and try asking questions like “Tell me more about this shirt” or “How do I pair this shirt?”
 
-![Explore Application](./images/Exercise-4-answer.jpg)
+![Explore the deployed Application](./images/Exercise-4-answer.jpg)
 ---
 
 End of Exercise 4.

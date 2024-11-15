@@ -23,7 +23,7 @@ This exercise not only illustrates a code-free observability enhancement but als
    - Within the Resource Group, find the **Application Insights** resource.
    - Open the Application Insights resource, and under **Settings**, find and copy the **Connection String**. This will be used to link your application to Application Insights.
 
-    ![Connection String](./images/Exercise-3-AIConnectionString.jpg)
+    ![Connection String within Application Insights resource experience in Azure portal](./images/Exercise-3-AIConnectionString.jpg)
 
 ## **Step 2: Configure the Application Environment Variables**
 1. **Navigate to Your Web Application (Exercise 1 App)**  
@@ -36,7 +36,7 @@ This exercise not only illustrates a code-free observability enhancement but als
      - **Value**: Paste the connection string you copied from the Application Insights resource.
    - Save the changes.
 
-   ![AppSettings](./images/Exercise-3-appsetting.jpg)
+   ![Environment variables section within Azure portal view of web app resource where you can add/update/remove App Settings](./images/Exercise-3-appsetting.jpg)
 
 ## **Step 3: Set Up the OTEL Sidecar Container**
 1. **Navigate to the Exercise-3 Folder in the Repository**  
@@ -67,7 +67,7 @@ This exercise not only illustrates a code-free observability enhancement but als
      - **Port**: Set to `4317` (the default port used by OTEL for exporting telemetry data).
    - Click Apply to save the settings.
 
-     ![Add Container](./images/Exercise-3-AddContainer.jpg)
+     ![Edit container settings within web app resource in Azure portal](./images/Exercise-3-AddContainer.jpg)
 
 ## **Step 5: Set the Startup Command**
 1. **Go to Configuration**
@@ -80,7 +80,7 @@ This exercise not only illustrates a code-free observability enhancement but als
      ```
    - This command will run `startup.sh`, which downloads the necessary OTEL instrumentation files for .NET applications.
 
-   ![Add Startup](./images/Exercise-3-Config.jpg)
+   ![Configure startup command in configuration section of web app resource in Azure portal](./images/Exercise-3-Config.jpg)
 
 3. **Save and Restart the Application**  
    - Save the changes. The application may take a minute to restart as it loads the OTEL sidecar container.
@@ -93,6 +93,6 @@ This exercise not only illustrates a code-free observability enhancement but als
    - Return to the Application Insights resource in the Azure portal.
    - On the Overview page, you should now see the telemetry data reflecting the requests and interactions captured by the OTEL sidecar, giving you deeper insights into application performance.
 
-   ![Application Insights](./images/Exercise-3-AppInsights.jpg)
+   ![Application Insights overview in Azure portal](./images/Exercise-3-AppInsights.jpg)
 
 ---
