@@ -5,7 +5,9 @@ In this exercise, you will be able to create chat assistant for the retail produ
 - Clone the repository from the main branch or fork it if you want to keep track of your changes if you have a GitHub account.
 - Create your Codespaces by clicking on the Code button, your new Codespace will be opened in a new browser tab
  <img width="264" alt="image" src="\images\Exercise-1-codespace.png">
-![Menu option showing option to create new Codespace](./images/Exercise-1-codespace.png)
+
+ ![Menu option showing option to create new Codespace](./images/Exercise-1-codespace.png)
+
 - View the project code in the Explorer blade inside VS Code Online
 
 **Prompt context**
