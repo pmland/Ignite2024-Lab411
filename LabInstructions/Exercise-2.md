@@ -22,7 +22,9 @@ In this exercise, you will use Semantic Kernel to integrate with Azure OpenAI. U
 
 ### Deploy webapp to Azure App Service
 - Right click on devshopDNC.csproj from Exercise 2 folder and select Open In Integrated Terminalaz login
- <img width="264" alt="image" src="\images\Exercise-1-terminal.png">
+
+  ![Context menu showing option to Open in integrated Terminal](./images/Exercise-1-terminal.png)
+
 - To publish the web app, run the command in the opened terminal, run dotnet publish -c Release -o ./bin/Publish
 - Right click on bin--> publish folder and select Deploy to webApp option
   
