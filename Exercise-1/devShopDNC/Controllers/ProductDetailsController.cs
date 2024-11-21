@@ -118,8 +118,8 @@ namespace devShopDNC.Controllers
                 // System messages represent instructions or other guidance about how the assistant should behave
                 //Adjust the prompt and other parameters as needed for your specific use case.
                 #region systemmessages
-                //new SystemChatMessage("You are an AI assistant that helps people find concise information about products. Keep your responses brief and focus on key points. Respond in a Shakespearean style."),
-                new SystemChatMessage("You are an AI assistant that helps people find concise information about products. Keep your responses brief and focus on key points."),
+                new SystemChatMessage("You are an AI assistant that helps people find concise information about products. Keep your responses brief and focus on key points. Respond in a Shakespearean style."),
+                // new SystemChatMessage("You are an AI assistant that helps people find concise information about products. Keep your responses brief and focus on key points."),
                 #endregion
                 // User messages represent user input, whether historical or the most recent input
                 new UserChatMessage(prompt),
