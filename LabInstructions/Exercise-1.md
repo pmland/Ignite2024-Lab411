@@ -26,8 +26,8 @@ In this exercise, you will be able to create chat assistant for the retail produ
 
   ![Context menu showing option to Open in integrated Terminal](./images/Exercise-1-terminal.png)
 
-- To publish the web app, run the command in the opened terminal, run dotnet publish -c Release -o ./bin/Publish
-- Right click on bin--> publish folder and select Deploy to webApp option
+- **To publish the web app, run the command in the opened terminal, run dotnet publish -c Release -o ./bin/Publish**
+- Right click on **bin--> Publish** folder and select Deploy to webApp option
   
 - Press Deploy
 
@@ -52,7 +52,7 @@ In this exercise, you will be able to create chat assistant for the retail produ
 
 - As a next step, on Azure Open AI Resource, web app  "Role Assignment" has been set as Cognitive Services OpenAI Contributor.
 
-### Connect to Azure Open AI
+### Connect to Azure Open AI (THIS STEP IS ALREADY DONE FOR YOU IN THIS LAB)
 
 Now, the website is up and running. Lets connect with Azure OpenAI to get the Chat with AI Assistant integrated to the web app 
 
